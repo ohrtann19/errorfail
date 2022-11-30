@@ -13,16 +13,16 @@
 
 .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
 
-a { color: red; text-decoration: none; font-size: 60px;}
+a { text-decoration: none; font-size: 60px;}
 a:focus {
     outline: none;
     box-shadow: none;
     border-color: red;
-    color:red;
+    /* color:red; */
     text-decoration: underline;
 }
 a:hover {
-    color:red;
+    /* color:red; */
     text-decoration: underline;
 }
 

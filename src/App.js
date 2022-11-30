@@ -10,6 +10,7 @@ import { useState } from "react";
 // inspiration taken from github's 404 page
 function App() {
   const [isActive, setIsActive] = useState(false);
+  const [linkActive, setLinkActive] = useState(false);
   
   const handleClick = () => {
     // 👇️ toggle
@@ -17,6 +18,10 @@ function App() {
 
     // 👇️ or set to true
     // setIsActive(true);
+  };
+
+  const handleLinkClick = () => {
+    setLinkActive(linkActive ? linkActive : !linkActive);
   };
   // TODO: use useState to create a state variable to hold the state of the cart
   /* add your cart state code here */
@@ -61,7 +66,7 @@ function App() {
         <a href="https://twitter.com/githubstatus">@githubstatus</a>
       </div> */}
       <button style={{visibility: isActive ? "hidden" : "visible"}} onClick={handleClick}>shut down</button>
-      <a style={{visibility: isActive ? "visible" : "hidden"}} href="https://ohrtann19.github.io/epicfail/">Exit</a>
+      <a onFocus={handleLinkClick} style={{visibility: isActive ? "visible" : "hidden", color: linkActive ? "red" : "black"}} href="https://ohrtann19.github.io/epicfail/">Exit</a>
     </div>
     
   );
