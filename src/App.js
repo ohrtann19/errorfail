@@ -61,7 +61,7 @@ function App() {
         <a href="https://twitter.com/githubstatus">@githubstatus</a>
       </div> */}
       <button style={{visibility: isActive ? "hidden" : "visible"}} onClick={handleClick}>shut down</button>
-      <a style={{visibility: isActive ? "visible" : "hidden"}} href="https://ohrtann19.github.io/epicfail/">Perform</a>
+      <a style={{visibility: isActive ? "visible" : "hidden"}} href="https://ohrtann19.github.io/epicfail/">Exit</a>
     </div>
     
   );
