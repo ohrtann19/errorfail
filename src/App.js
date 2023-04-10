@@ -1,6 +1,5 @@
-// import "./App.css";
-// import { useState } from "react";
-// import bakeryData from "./assets/bakery-data.json";
+import "./App.css";
+import { useState } from "react";
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 // bakeryData.forEach((item) => {
@@ -56,15 +55,6 @@ function App() {
         If this is your only hope, keep searching.
       </p>
 
-      <p>
-        <a href="https://help.github.com/pages/">Read the full documentation</a>
-        for more information about using <strong>GitHub Pages</strong>.
-      </p>
-
-      <div id="suggestions">
-        <a href="https://githubstatus.com">GitHub Status</a> &mdash;
-        <a href="https://twitter.com/githubstatus">@githubstatus</a>
-      </div>
       <button style={{visibility: isActive ? "hidden" : "visible"}} onClick={handleClick}>shut down</button>
       <a onFocus={handleLinkClick} style={{visibility: isActive ? "visible" : "hidden", color: linkActive ? "red" : "black"}} href="https://ohrtann19.github.io/epicfail/">Exit</a>
     </div>
